@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ body {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
     width: 100%;
     max-width: 1200px;
     text-align: center;
@@ -38,19 +38,19 @@ input {
 button {
     padding: 10px;
     border: none;
-    background-color: #28a745;
+    background-color: #a728a5;
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #8a1f88;
 }
 
 #lists-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     gap: 20px;
 }
 
@@ -58,14 +58,16 @@ button:hover {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
 }
 
 .list-header {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
+    gap: 32px;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: column;
 }
 
 .list-header h2 {
@@ -73,7 +75,7 @@ button:hover {
 }
 
 .list-header button {
-    background: #dc3545;
+    background: black;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -83,19 +85,6 @@ button:hover {
 
 .list-header button:hover {
     background: #c82333;
-}
-
-.share-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.share-button:hover {
-    background: #0056b3;
 }
 
 .item-list-form {
@@ -114,14 +103,14 @@ button:hover {
 .item-list-form button {
     padding: 10px;
     border: none;
-    background-color: #28a745;
+    background-color: #e62da8;
     color: white;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .item-list-form button:hover {
-    background-color: #218838;
+    background-color: #c4258f;
 }
 
 ul {
@@ -142,7 +131,7 @@ li {
 
 li a {
     flex: 1;
-    color: #007bff;
+    color: #090909;
     text-decoration: none;
 }
 
@@ -161,4 +150,10 @@ li button {
 
 li button:hover {
     background: #c82333;
+}
+.icon-button {
+    width: 24px; /* Dostosuj rozmiar do wymagań */
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px; /* Dostosuj marginesy według potrzeb */
 }
