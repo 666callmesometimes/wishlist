@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const removeButton = document.createElement('button');
-        removeButton.textContent = 'Delete';
+        removeButton.textContent = '.';
         removeButton.addEventListener('click', () => {
             itemList.removeChild(li);
             saveLists();
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itemListForm.innerHTML = `
                 <input type="text" placeholder="Add item..." required>
                 <input type="url" placeholder="Add URL...">
-                <button type="submit">+</button>
+                <button type="submit">Add item</button>
             `;
 
             const itemList = document.createElement('ul');

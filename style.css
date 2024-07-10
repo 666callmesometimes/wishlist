@@ -2,20 +2,20 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-    background: white;
     padding: 20px;
     border-radius: 8px;
     /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
     text-align: center;
 }
 
@@ -30,28 +30,36 @@ form {
 
 input {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 50px;
+    color: #444;
 }
 
 button {
-    padding: 10px;
     border: none;
-    background-color: #a728a5;
+    background-color: #DF9CFE;
     color: white;
-    border-radius: 0 4px 4px 0;
+    border-radius: 16px;
     cursor: pointer;
+    font-size: 2rem;
+    width:50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
 }
 
 button:hover {
-    background-color: #8a1f88;
+    background-color: #cc91e8;
 }
 
 #lists-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     gap: 20px;
+    border-radius: 16px;
+
 }
 
 .list {
@@ -72,45 +80,54 @@ button:hover {
 
 .list-header h2 {
     margin: 0;
+    font-weight: 500;
 }
 
 .list-header button {
     background: black;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 16px;
     cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+
 }
 
 .list-header button:hover {
-    background: #c82333;
+    background: #212121;
 }
 
 .item-list-form {
     display: none;
     flex-direction: column;
     margin-bottom: 10px;
+    
 }
 
 .item-list-form input {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 16px;
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .item-list-form button {
     padding: 10px;
     border: none;
-    background-color: #e62da8;
+    background-color: black;
     color: white;
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
+    width: 100%;
+    font-size: 16px;
 }
 
 .item-list-form button:hover {
-    background-color: #c4258f;
+    background-color: #cc91e8;
 }
 
 ul {
@@ -120,13 +137,12 @@ ul {
 
 li {
     padding: 10px;
-    background: #f9f9f9;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    background: none;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: left;
 }
 
 li a {
@@ -140,20 +156,33 @@ li a:hover {
 }
 
 li button {
-    background: #dc3545;
+    background: #ffffff00;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
     cursor: pointer;
+    background-image: url(img/remove.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 2px;
+    color: #ffffff00;
 }
 
 li button:hover {
-    background: #c82333;
+    background: #000000;
 }
 .icon-button {
     width: 24px; /* Dostosuj rozmiar do wymagań */
     height: 24px;
     cursor: pointer;
     margin-left: 8px; /* Dostosuj marginesy według potrzeb */
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img{
+    width: 4rem;
 }
